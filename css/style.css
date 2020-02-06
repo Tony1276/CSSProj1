@@ -1,0 +1,77 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+
+/* Basic reset styles */
+
+
+/* This is the reset styles to delete any of the inherit styles that the browser might have */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: grey;
+    margin: 25px;
+}
+
+header {
+    position: relative;
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(39, 180, 133, 0.801)), url(../img/hero.jpg);
+    /* what background-size does is to always fix the size of the element to the size of the image */
+    background-size: cover;
+    background-position: top;
+    /* This is specifically for safari for having a diagonal clip of an element */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+
+.logo-img {
+    height: 35px;
+}
+
+.catchphrase {
+    color: white;
+    text-transform: uppercase;
+}
+
+.catchphrase-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 30px;
+}
+
+.catchphrase-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 18px;
+}
+
+.catchphrase-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
